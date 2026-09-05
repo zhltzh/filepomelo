@@ -133,15 +133,15 @@ export function DropZone({ onFilesSelected }: DropZoneProps) {
         <Upload
           className={cn(
             "h-8 w-8 transition-colors",
-            isDragOver ? "text-white" : "text-gray-400"
+            isDragOver ? "text-white" : "text-gray-500"
           )}
         />
       </div>
 
       <p className="mt-5 text-lg font-semibold text-gray-800">{t("dropTitle")}</p>
-      <p className="mt-1.5 text-sm text-gray-400">{t("dropSubtitle")}</p>
+      <p className="mt-1.5 text-sm text-gray-500">{t("dropSubtitle")}</p>
 
-      <div className="mt-5 flex flex-wrap items-center justify-center gap-3 text-xs text-gray-400">
+      <div className="mt-5 flex flex-wrap items-center justify-center gap-3 text-xs text-gray-500">
         <button
           type="button"
           onClick={() => inputRef.current?.click()}
@@ -158,13 +158,13 @@ export function DropZone({ onFilesSelected }: DropZoneProps) {
           <FolderOpen className="h-3.5 w-3.5" />
           {t("selectFolder")}
         </button>
-        <span className="flex items-center gap-1.5 rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+        <span className="flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-100 px-3 py-2 text-gray-600">
           <ClipboardPaste className="h-3.5 w-3.5" />
           {t("paste")}
         </span>
       </div>
 
-      <p className="mt-4 text-xs text-gray-300">{t("dropHint")}</p>
+      <p className="mt-4 text-xs text-gray-500">{t("dropHint")}</p>
     </div>
   );
 }

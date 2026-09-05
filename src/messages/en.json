@@ -226,5 +226,21 @@
     "convertBtn": "Convert to WOFF2",
     "converting": "Converting…",
     "download": "Download"
+  },
+  "Privacy": {
+    "metaTitle": "Privacy Policy - FilePomelo",
+    "metaDescription": "FilePomelo privacy policy: all files are processed locally in your browser and never uploaded to any server.",
+    "title": "Privacy Policy",
+    "updated": "Last updated: September 2026",
+    "s1Title": "1. Files never leave your device",
+    "s1Desc": "All compression, conversion and extraction features of FilePomelo run locally in your browser (WebAssembly / WebCodecs / Canvas). File data is never sent to any server. Closing the page destroys everything instantly.",
+    "s2Title": "2. What we collect",
+    "s2Desc": "This site has no accounts and does not collect file names, file contents or personal identity information. Basic aggregated usage stats (e.g. page views, referrers) may be kept to understand site usage.",
+    "s3Title": "3. Cookies and tracking",
+    "s3Desc": "No advertising or tracking cookies, and no third-party ad or analytics scripts. If anonymous statistics (e.g. page views) are added later, only aggregated data will be collected.",
+    "s4Title": "4. Third-party services",
+    "s4Desc": "The site is hosted on GitHub Pages (GitHub, Inc.). GitHub may record access logs (e.g. IP, User-Agent) under its own privacy policy; see GitHub’s official policy for details.",
+    "s5Title": "5. Contact",
+    "s5Desc": "Questions about this policy? Reach us via the site footer or the GitHub repository (github.com/zhltzh/filepomelo)."
   }
 }

@@ -226,5 +226,21 @@
     "convertBtn": "转换为 WOFF2",
     "converting": "转换中…",
     "download": "下载"
+  },
+  "Privacy": {
+    "metaTitle": "隐私政策 - FilePomelo",
+    "metaDescription": "FilePomelo 隐私政策：所有文件均在浏览器本地处理，不会上传到任何服务器。",
+    "title": "隐私政策",
+    "updated": "最后更新：2026 年 9 月",
+    "s1Title": "1. 文件不上传，处理全在本机",
+    "s1Desc": "FilePomelo 的所有压缩、转换与解压功能都在你的浏览器本地完成（WebAssembly / WebCodecs / Canvas），文件数据不会发送到任何服务器。关闭页面即完全销毁，不产生残留。",
+    "s2Title": "2. 我们收集什么",
+    "s2Desc": "本站不设账号系统，不收集文件名、文件内容或个人身份信息。可能仅保留基础的访问统计（如页面浏览量、来源），用于了解站点使用情况。",
+    "s3Title": "3. Cookie 与跟踪",
+    "s3Desc": "本站不使用广告追踪类 Cookie，不接入第三方广告或分析脚本。如后续接入匿名统计（如页面 PV），将仅收集聚合数据，不包含可识别个人身份的信息。",
+    "s4Title": "4. 第三方服务",
+    "s4Desc": "站点托管于 GitHub Pages（GitHub 公司）。GitHub 可能按其隐私政策记录访问日志（如 IP、User-Agent），详情见 GitHub 官网隐私政策。",
+    "s5Title": "5. 联系方式",
+    "s5Desc": "如对本隐私政策有任何疑问，可通过站点页脚或 GitHub 仓库（github.com/zhltzh/filepomelo）与我们联系。"
   }
 }

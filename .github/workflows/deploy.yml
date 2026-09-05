@@ -51,6 +51,15 @@ jobs:
         with:
           path: ./out
 
+      - name: Install Playwright chromium (for E2E spike)
+        run: npx playwright install --with-deps chromium
+
+      - name: E2E spike (image converter / unzip / font woff2)
+        run: node scripts/spike/run-3tools-spike.cjs
+        env:
+          SPIKE_CHANNEL: chromium
+          SPIKE_BASE: /filepomelo
+
   deploy:
     environment:
       name: github-pages

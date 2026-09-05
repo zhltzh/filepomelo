@@ -13,6 +13,7 @@ const TOOL_PATHS = [
   "/image-converter",
   "/unzip",
   "/font-compressor",
+  "/privacy",
 ];
 
 /** 站点地图：中英双语全部静态路由（配合 [locale] 静态导出） */

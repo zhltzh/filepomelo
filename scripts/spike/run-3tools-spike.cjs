@@ -14,6 +14,8 @@ const OUT = path.join(ROOT, "out");
 const PORT = 4187;
 // 子路径部署验证：SPIKE_BASE=/filepomelo 时模拟 GitHub Pages 前缀
 const BASE = process.env.SPIKE_BASE || "";
+// CI 里无系统 Chrome：SPIKE_CHANNEL=chromium 使用 Playwright 自带浏览器
+const CHANNEL = process.env.SPIKE_CHANNEL === "chromium" ? undefined : "chrome";
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -52,14 +54,28 @@ function serve() {
     );
   });
 
-  const png = path.join("D:/PDF/pdfbzy/e2e-fixtures/big1.png");
-  const ttf = "C:/Windows/Fonts/arial.ttf";
+  // 测试素材：png 优先项目内 fixtures（CI 可用的提交文件），ttf 探测常见路径
+  const pngCandidates = [
+    path.join(__dirname, "fixtures", "big1.png"),
+    "D:/PDF/pdfbzy/e2e-fixtures/big1.png",
+  ];
+  const png = pngCandidates.find((p) => fs.existsSync(p));
+  const ttfCandidates = [
+    "C:/Windows/Fonts/arial.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", // ubuntu CI
+  ];
+  const ttf = ttfCandidates.find((p) => fs.existsSync(p));
+  if (!png || !ttf) {
+    console.error("缺少测试素材: png=", png, " ttf=", ttf);
+    process.exit(2);
+  }
+  const ttfName = path.basename(ttf);
 
   const server = await serve();
   let browser;
   const results = [];
   try {
-    browser = await chromium.launch({ channel: "chrome", headless: true });
+    browser = await chromium.launch({ channel: CHANNEL, headless: true });
     const ctx = await browser.newContext({ acceptDownloads: true });
     const page = await ctx.newPage();
     page.on("pageerror", (e) => console.log("  [pageerror]", e.message));
@@ -101,7 +117,7 @@ function serve() {
     await page.getByRole("button", { name: /转换为 WOFF2/ }).click();
     await page.waitForFunction(() => document.body.innerText.includes("→ "), { timeout: 60000 });
     const fontText = await page.evaluate(() => document.body.innerText.replace(/\s+/g, " "));
-    const fontMatch = fontText.match(/arial\.ttf\s*[\d.]+\s*KB\s*→\s*[\d.]+\s*KB\s*\(−?\d+%\)/);
+    const fontMatch = fontText.match(new RegExp(`${ttfName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*[\\d.]+\\s*KB\\s*→\\s*[\\d.]+\\s*KB\\s*\\(−?\\d+%\\)`));
     const fontPass = !!fontMatch;
     console.log(fontPass ? `  ✅ 压缩成功: ${fontMatch[0]}` : `  ❌ ${fontText.slice(0, 220)}`);
     results.push(["字体 WOFF2 压缩", fontPass]);

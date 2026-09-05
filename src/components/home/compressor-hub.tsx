@@ -252,7 +252,7 @@ export function CompressorHub({ category }: CompressorHubProps) {
             className={cn(
               "rounded-full border px-4 py-1.5 text-sm transition-colors",
               quality.key === opt.key
-                ? "border-primary bg-primary/10 text-primary font-medium"
+                ? "border-primary bg-primary/10 text-blue-800 font-medium"
                 : "border-gray-200 text-gray-500 hover:border-primary/50"
             )}
           >
@@ -272,7 +272,7 @@ export function CompressorHub({ category }: CompressorHubProps) {
             placeholder={t("targetSizePlaceholder")}
             className="w-24 rounded-lg border border-gray-200 bg-white px-2 py-1.5 text-sm text-gray-700 outline-none transition-colors focus:border-primary"
           />
-          <span className="text-xs text-gray-400">{t("targetSizeUnit")}</span>
+          <span className="text-xs text-gray-500">{t("targetSizeUnit")}</span>
         </div>
       </div>
 
@@ -281,10 +281,10 @@ export function CompressorHub({ category }: CompressorHubProps) {
         <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">
           <div className="flex items-center justify-between border-b bg-gray-50/80 px-4 py-3">
             <div className="flex items-center gap-2 text-sm font-medium text-gray-700">
-              <FileIcon className="h-4 w-4 text-primary" />
+              <FileIcon className="h-4 w-4 text-blue-800" />
               {t("taskCount", { count: tasks.length })}
               {isProcessing && (
-                <Loader2 className="h-4 w-4 animate-spin text-primary" />
+                <Loader2 className="h-4 w-4 animate-spin text-blue-800" />
               )}
             </div>
             <button
@@ -341,7 +341,7 @@ export function CompressorHub({ category }: CompressorHubProps) {
                       </>
                     )}
                     {task.status === "processing" && (
-                      <span className="text-primary">{task.progress}%</span>
+                      <span className="text-blue-800">{task.progress}%</span>
                     )}
                   </div>
                   {/* 进度条 */}
@@ -363,13 +363,13 @@ export function CompressorHub({ category }: CompressorHubProps) {
                     <Clock className="h-4 w-4 text-gray-300" />
                   )}
                   {task.status === "processing" && (
-                    <Loader2 className="h-4 w-4 animate-spin text-primary" />
+                    <Loader2 className="h-4 w-4 animate-spin text-blue-800" />
                   )}
                   {task.status === "completed" && (
                     <>
                       <button
                         onClick={() => handleDownloadOne(task)}
-                        className="flex items-center gap-1 rounded-lg bg-primary/10 px-2.5 py-1.5 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+                        className="flex items-center gap-1 rounded-lg bg-primary/10 px-2.5 py-1.5 text-xs font-medium text-blue-800 transition-colors hover:bg-primary/20"
                       >
                         <Download className="h-3.5 w-3.5" />
                         {t("download")}
@@ -420,7 +420,7 @@ export function CompressorHub({ category }: CompressorHubProps) {
           {completedCount > 0 && (
             <button
               onClick={handleDownloadAll}
-              className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary/10 active:scale-[0.98]"
+              className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-semibold text-blue-800 transition-all hover:bg-primary/10 active:scale-[0.98]"
             >
               <Package className="h-4 w-4" />
               {completedCount > 1

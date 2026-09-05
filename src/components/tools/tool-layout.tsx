@@ -49,11 +49,11 @@ export function ToolLayout({ tool, children, faqItems }: ToolLayoutProps) {
       <div className="border-b bg-white/80 backdrop-blur-sm">
         <div className="mx-auto max-w-5xl px-4 py-3 sm:px-6 lg:px-8">
           <nav className="flex items-center gap-1.5 text-sm text-gray-500">
-            <Link href="/" className="transition-colors hover:text-primary">
+            <Link href="/" className="transition-colors hover:text-blue-800">
               {t("breadcrumbHome")}
             </Link>
             <ChevronRight className="h-3.5 w-3.5" />
-            <Link href="/tools" className="transition-colors hover:text-primary">
+            <Link href="/tools" className="transition-colors hover:text-blue-800">
               {t("breadcrumbTools")}
             </Link>
             <ChevronRight className="h-3.5 w-3.5" />
@@ -139,7 +139,7 @@ export function ToolLayout({ tool, children, faqItems }: ToolLayoutProps) {
                 key={item.step}
                 className="relative rounded-xl border bg-white p-5 text-center"
               >
-                <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-lg font-bold text-primary">
+                <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-lg font-bold text-blue-800">
                   {item.step}
                 </div>
                 <h3 className="mt-3 font-semibold text-gray-900">{item.title}</h3>

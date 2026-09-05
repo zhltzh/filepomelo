@@ -121,7 +121,7 @@ export function FontCompressor() {
         <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">
           <div className="flex items-center justify-between border-b bg-gray-50/80 px-4 py-3">
             <div className="flex items-center gap-2 text-sm font-medium text-gray-700">
-              <Type className="h-4 w-4 text-primary" />
+              <Type className="h-4 w-4 text-blue-800" />
               {t("fileCount", { count: items.length })}
               {doneCount > 0 && (
                 <span className="text-xs text-green-600">
@@ -165,7 +165,7 @@ export function FontCompressor() {
                   )}
                 </div>
                 {item.status === "working" && (
-                  <Loader2 className="h-4 w-4 flex-shrink-0 animate-spin text-primary" />
+                  <Loader2 className="h-4 w-4 flex-shrink-0 animate-spin text-blue-800" />
                 )}
                 {item.status === "done" && (
                   <>
@@ -177,7 +177,7 @@ export function FontCompressor() {
                         onClick={() =>
                           downloadFile(item.outBlob!, replaceExt(item.name, ".woff2"))
                         }
-                        className="flex flex-shrink-0 items-center gap-1 rounded-lg bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+                        className="flex flex-shrink-0 items-center gap-1 rounded-lg bg-primary/10 px-2.5 py-1 text-xs font-medium text-blue-800 transition-colors hover:bg-primary/20"
                       >
                         <Download className="h-3.5 w-3.5" />
                         {t("download")}

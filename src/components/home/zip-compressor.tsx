@@ -99,7 +99,7 @@ export function ZipCompressor() {
             className={cn(
               "rounded-full border px-4 py-1.5 text-sm transition-colors",
               level === opt.value
-                ? "border-primary bg-primary/10 text-primary font-medium"
+                ? "border-primary bg-primary/10 text-blue-800 font-medium"
                 : "border-gray-200 text-gray-500 hover:border-primary/50"
             )}
           >
@@ -115,7 +115,7 @@ export function ZipCompressor() {
         <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">
           <div className="flex items-center justify-between border-b bg-gray-50/80 px-4 py-3">
             <div className="flex items-center gap-2 text-sm font-medium text-gray-700">
-              <FileIcon className="h-4 w-4 text-primary" />
+              <FileIcon className="h-4 w-4 text-blue-800" />
               {t("fileCount", { count: items.length })}
               <span className="text-xs text-gray-400">
                 {formatFileSize(totalSize)}
@@ -181,7 +181,7 @@ export function ZipCompressor() {
         <div className="flex flex-col items-center gap-4 rounded-2xl border bg-white p-6 text-center shadow-sm sm:flex-row sm:justify-between sm:text-left">
           <div className="flex items-center gap-3">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-              <CheckCircle2 className="h-6 w-6 text-primary" />
+              <CheckCircle2 className="h-6 w-6 text-blue-800" />
             </div>
             <div>
               <p className="text-sm font-semibold text-gray-800">{t("done")}</p>

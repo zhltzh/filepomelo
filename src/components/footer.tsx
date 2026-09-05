@@ -34,8 +34,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-gray-200 pt-6 text-center text-xs text-gray-400">
-          © {now} FilePomelo. {t("copyright")}
+        <div className="mt-8 border-t border-gray-200 pt-6 text-center text-xs text-gray-500">
+          © {now} FilePomelo. {t("copyright")}{" "}
+          <Link href="/privacy" className="underline-offset-2 hover:underline">
+            {t("privacy")}
+          </Link>
         </div>
       </div>
     </footer>

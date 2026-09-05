@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>FilePomelo Engine Spike</title>
+<style>
+  body { font-family: ui-monospace, Consolas, monospace; background: #0d1117; color: #c9d1d9; padding: 24px; max-width: 900px; margin: 0 auto; }
+  h2 { color: #58a6ff; }
+  pre { background: #161b22; padding: 16px; border-radius: 8px; white-space: pre-wrap; word-break: break-all; }
+  .ok { color: #3fb950; } .fail { color: #f85149; } .warn { color: #d29922; }
+</style>
+</head>
+<body>
+<h2>FilePomelo 引擎 Spike 验证</h2>
+<pre id="log"></pre>
+<script>
+window.__spike = { tests: [], done: false, isolated: false, sharedArrayBuffer: false };
+function log(msg, cls) {
+  var el = document.getElementById('log');
+  var line = document.createElement('div');
+  if (cls) line.className = cls;
+  line.textContent = msg;
+  el.appendChild(line);
+  console.log('[spike]', msg);
+}
+function push(name, ok, detail) {
+  window.__spike.tests.push({ name: name, ok: !!ok, detail: detail || '' });
+  log((ok ? 'PASS ' : 'FAIL ') + name + (detail ? '  | ' + detail : ''), ok ? 'ok' : 'fail');
+}
+async function fetchBuf(url) {
+  var r = await fetch(url);
+  if (!r.ok) throw new Error('fetch ' + url + ' -> HTTP ' + r.status);
+  return new Uint8Array(await r.arrayBuffer());
+}
+function fmt(n) {
+  return (n / 1024).toFixed(1) + ' KB';
+}
+
+async function testGhostscript() {
+  log('--- [1] Ghostscript PDF 压缩 ---');
+  try {
+    var input = await fetchBuf('/spike-assets/big-image.pdf');
+    log('输入: big-image.pdf = ' + fmt(input.length));
+    var mod = await import('/vendor/ghostscript/gs.js');
+    var Module = mod.default;
+    var gs = await Module({ locateFile: function (f) { return '/vendor/ghostscript/' + f; } });
+    gs.FS.writeFile('input.pdf', input);
+    gs.callMain([
+      '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4', '-dPDFSETTINGS=/ebook',
+      '-dNOPAUSE', '-dQUIET', '-dBATCH', '-dSAFER',
+      '-sOutputFile=output.pdf', 'input.pdf'
+    ]);
+    var out = gs.FS.readFile('output.pdf', { encoding: 'binary' });
+    gs.FS.unlink('input.pdf'); gs.FS.unlink('output.pdf');
+    var ratio = input.length > 0 ? (1 - out.length / input.length) * 100 : 0;
+    push('ghostscript', out.length > 0 && out.length < input.length,
+      '输出 ' + fmt(out.length) + '，压缩率 ' + ratio.toFixed(1) + '%');
+  } catch (e) { push('ghostscript', false, String(e && e.message || e)); }
+}
+
+async function testFfmpegSingleThread() {
+  log('--- [2] ffmpeg 单线程 core（无 COOP/COEP）---');
+  try {
+    var mod = await import('/vendor/ffmpeg/core/ffmpeg-core.js');
+    var createCore = mod.default;
+    var coreURL = '/vendor/ffmpeg/core/ffmpeg-core.js';
+    var wasmURL = '/vendor/ffmpeg/core/ffmpeg-core.wasm';
+    var workerURL = '/vendor/ffmpeg/core/ffmpeg-core.worker.js';
+    var ff = await createCore({
+      mainScriptUrlOrBlob: coreURL + '#' + btoa(JSON.stringify({ wasmURL: wasmURL, workerURL: workerURL }))
+    });
+    ff.setLogger(function () {}); ff.setProgress(function () {});
+    // 用 lavfi testsrc 直接生成视频（无需输入文件）
+    ff.exec('-f', 'lavfi', '-i', 'testsrc=duration=1:size=160x120:rate=10',
+      '-c:v', 'libx264', '-preset', 'ultrafast', '-y', 'out.mp4');
+    var ret = ff.ret;
+    ff.reset();
+    var out = ff.FS.readFile('out.mp4');
+    log('exec 返回: ' + ret + '，输出 ' + fmt(out.length));
+    // MP4 结构：[size(4字节)]['ftyp'(4-7字节)]，故校验 bytes 4-7
+    var isMp4 = out.length > 8 && out[4] === 0x66 && out[5] === 0x74 && out[6] === 0x79 && out[7] === 0x70;
+    push('ffmpeg-single-thread', ret === 0 && isMp4,
+      '生成 out.mp4 = ' + fmt(out.length) + '（mp4 魔数=' + isMp4 + '）');
+  } catch (e) { push('ffmpeg-single-thread', false, String(e && e.message || e)); }
+}
+
+async function main() {
+  log('交叉源隔离状态: crossOriginIsolated=' + window.crossOriginIsolated +
+      '，SharedArrayBuffer=' + (typeof SharedArrayBuffer !== 'undefined'));
+  window.__spike.isolated = !!window.crossOriginIsolated;
+  window.__spike.sharedArrayBuffer = typeof SharedArrayBuffer !== 'undefined';
+
+  await testGhostscript();
+  await testFfmpegSingleThread();
+
+  // ffmpeg 多线程依赖检测：仅记录可行性结论
+  if (window.crossOriginIsolated) {
+    log('--- [3] ffmpeg 多线程 core-mt：当前页面已交叉源隔离，可启用 ---');
+    push('ffmpeg-mt-availability', true, 'crossOriginIsolated=true，可加载 /vendor/ffmpeg/core-mt/');
+  } else {
+    log('--- [3] ffmpeg 多线程 core-mt：当前无 COOP/COEP 头，需 coi-serviceworker ---', 'warn');
+    push('ffmpeg-mt-availability', false, 'crossOriginIsolated=false，静态托管需 Service Worker 注入 COOP/COEP');
+  }
+
+  window.__spike.done = true;
+  log('=== spike 完成 ===');
+}
+main();
+</script>
+</body>
+</html>

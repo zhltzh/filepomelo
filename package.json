@@ -1,0 +1,51 @@
+{
+  "name": "filepomelo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FilePomelo - 纯浏览器端全格式文件压缩工具（图片/PDF/音视频）",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "setup:vendor": "node scripts/setup-vendor.cjs"
+  },
+  "dependencies": {
+    "@ffmpeg/core": "^0.12.6",
+    "@ffmpeg/core-mt": "^0.12.6",
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "@ffmpeg/util": "^0.12.1",
+    "@jsquash/avif": "^1.0.0",
+    "@jsquash/jpeg": "^1.6.0",
+    "@jsquash/png": "^3.1.1",
+    "@jsquash/webp": "^1.5.0",
+    "@okathira/ghostpdl-wasm": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "fflate": "^0.8.2",
+    "gifsicle-wasm-browser": "^1.5.19",
+    "lucide-react": "^0.400.0",
+    "mediabunny": "^1.55.6",
+    "next": "^14.2.0",
+    "next-intl": "^3.26.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.3.289",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "svgo": "^3.3.0",
+    "tailwind-merge": "^2.3.0",
+    "woff2-encode-wasm": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35",
+    "playwright": "^1.62.1",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0"
+  }
+}

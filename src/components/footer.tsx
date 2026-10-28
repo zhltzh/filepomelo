@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { TOOLS } from "@/config/tools";
+import { SiteNetwork } from "@/components/site-network";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -39,6 +40,10 @@ export function Footer() {
           <Link href="/privacy" className="underline-offset-2 hover:underline">
             {t("privacy")}
           </Link>
+        </div>
+
+        <div className="mt-6 border-t border-gray-200">
+          <SiteNetwork />
         </div>
       </div>
     </footer>

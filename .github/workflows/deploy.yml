@@ -41,10 +41,6 @@ jobs:
 
       - name: Build with Next.js
         run: npm run build
-        env:
-          # GitHub Pages 子路径部署（仓库 filepomelo → /filepomelo/）。
-          # 绑定自定义域名（根路径）后删除此行即可。
-          NEXT_PUBLIC_BASE_PATH: /filepomelo
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -58,7 +54,7 @@ jobs:
         run: node scripts/spike/run-3tools-spike.cjs
         env:
           SPIKE_CHANNEL: chromium
-          SPIKE_BASE: /filepomelo
+          SPIKE_BASE: /
 
   deploy:
     environment:

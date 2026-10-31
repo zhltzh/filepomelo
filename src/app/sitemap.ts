@@ -18,12 +18,14 @@ const TOOL_PATHS = [
 
 /** 站点地图：中英双语全部静态路由（配合 [locale] 静态导出） */
 export default function sitemap(): MetadataRoute.Sitemap {
+  // 固定发布日期，避免每次构建抖动；内容变更时手动更新
+  const lastModified = new Date("2026-11-01");
   const urls: MetadataRoute.Sitemap = [];
   for (const locale of ["zh", "en"]) {
     for (const p of TOOL_PATHS) {
       urls.push({
         url: `${BASE}/${locale}${p}/`,
-        lastModified: new Date(),
+        lastModified,
         changeFrequency: "weekly",
         priority: p === "" ? 1 : 0.8,
       });

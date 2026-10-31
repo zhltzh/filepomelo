@@ -1,0 +1,38 @@
+# Aixuno Compress — File Compressor
+
+> Free browser-based file compressor for images, PDF, video, audio, archives and fonts. Files are processed locally in the browser and are never uploaded to an Aixuno server.
+
+## Site
+
+- Name: Aixuno Compress (formerly FilePomelo)
+- Homepage: https://compress.aixuno.com/
+- Purpose: compress and convert files without uploading them
+- Languages: Simplified Chinese (https://compress.aixuno.com/zh/), English (https://compress.aixuno.com/en/)
+
+## Tools
+
+- Image compressor: https://compress.aixuno.com/en/image-compressor
+- PDF compressor: https://compress.aixuno.com/en/pdf-compressor
+- Video compressor: https://compress.aixuno.com/en/video-compressor
+- Audio compressor: https://compress.aixuno.com/en/audio-compressor
+- ZIP compressor: https://compress.aixuno.com/en/zip-compressor
+- ZIP extractor: https://compress.aixuno.com/en/unzip
+- Image format converter: https://compress.aixuno.com/en/image-converter
+- Font subsetting: https://compress.aixuno.com/en/font-compressor
+- All tools: https://compress.aixuno.com/en/tools
+
+Chinese versions replace `/en/` with `/zh/`.
+
+## Key facts
+
+- Compression runs on the user's device; no file is transferred to a server.
+- No account or sign-up is required, and usage is free.
+- Supported formats include JPG, PNG, WebP, AVIF, GIF, SVG, PDF, MP4, WebM, MP3, WAV, ZIP and common font files.
+- Video and PDF pipelines use WebAssembly workers (ffmpeg, Ghostscript) that load on demand.
+
+## Related Aixuno sites
+
+- https://aixuno.com — Markdown and document conversion
+- https://image.aixuno.com — image editing and conversion
+- https://pdf.aixuno.com — PDF tools
+- https://bg.aixuno.com — background removal

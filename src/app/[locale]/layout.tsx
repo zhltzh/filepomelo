@@ -35,7 +35,7 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
-      siteName: "FilePomelo",
+      siteName: "Aixuno Compress",
       type: "website",
       locale: locale === "zh" ? "zh_CN" : "en_US",
       url,

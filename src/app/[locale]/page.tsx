@@ -17,9 +17,44 @@ export default async function HomePage({
   const { locale } = params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Home" });
+  const meta = await getTranslations({ locale, namespace: "Meta" });
+
+  const base = "https://compress.aixuno.com";
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        name: meta("title"),
+        description: meta("description"),
+        url: `${base}/${locale}/`,
+        applicationCategory: "UtilitiesApplication",
+        operatingSystem: "Any (browser-based)",
+        inLanguage: locale === "zh" ? "zh-CN" : "en-US",
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        isAccessibleForFree: true,
+      },
+      {
+        "@type": "Organization",
+        name: "Aixuno",
+        url: "https://aixuno.com/",
+        logo: "https://aixuno.com/apple-touch-icon.png",
+      },
+      {
+        "@type": "WebSite",
+        name: "Aixuno Compress",
+        url: `${base}/`,
+        inLanguage: ["zh-CN", "en-US"],
+      },
+    ],
+  };
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-blue-800">
         {/* 光晕 */}

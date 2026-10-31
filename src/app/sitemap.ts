@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://filepomelo.com";
+const BASE = "https://compress.aixuno.com";
 
 const TOOL_PATHS = [
   "",

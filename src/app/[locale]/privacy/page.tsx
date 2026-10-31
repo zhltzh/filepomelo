@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: { canonical: `https://filepomelo.com/${locale}/privacy` },
+    alternates: { canonical: `https://compress.aixuno.com/${locale}/privacy` },
   };
 }
 

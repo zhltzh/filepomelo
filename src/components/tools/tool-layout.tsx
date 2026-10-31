@@ -40,7 +40,7 @@ export function ToolLayout({ tool, children, faqItems }: ToolLayoutProps) {
   ];
 
   const relatedTools = TOOLS.filter((x) => x.id !== tool.id);
-  const baseUrl = "https://filepomelo.com";
+  const baseUrl = "https://compress.aixuno.com";
   const HeaderIcon = getToolIcon(tool.id);
 
   return (

@@ -17,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  const base = "https://filepomelo.com";
+  const base = "https://compress.aixuno.com";
   const url = `${base}/${locale}`;
   return {
     metadataBase: new URL(base),

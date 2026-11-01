@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { TOOLS } from "@/config/tools";
 import { SiteNetwork } from "@/components/site-network";
+import { ShareLinks } from "@/components/share-links";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -49,6 +50,10 @@ export function Footer() {
           >
             {t("feedback")}
           </a>
+        </div>
+
+        <div className="mt-6 flex items-center justify-center border-t border-gray-200 pt-6">
+          <ShareLinks />
         </div>
 
         <div className="mt-6 border-t border-gray-200">

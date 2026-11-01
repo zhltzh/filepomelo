@@ -40,6 +40,15 @@ export function Footer() {
           <Link href="/privacy" className="underline-offset-2 hover:underline">
             {t("privacy")}
           </Link>
+          {" · "}
+          <a
+            href="https://github.com/zhltzh/filepomelo/issues/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline-offset-2 hover:underline"
+          >
+            {t("feedback")}
+          </a>
         </div>
 
         <div className="mt-6 border-t border-gray-200">

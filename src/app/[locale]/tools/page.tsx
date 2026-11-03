@@ -1,7 +1,49 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ToolCard } from "@/components/home/tool-card";
 import { TOOLS } from "@/config/tools";
 import { routing } from "@/i18n/routing";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+  const t = await getTranslations({ locale, namespace: "Tools" });
+  const base = "https://compress.aixuno.com";
+  const path = "/tools/";
+  const title = `${t("title")} — FilePomelo`;
+  const description = t("description");
+  return {
+    metadataBase: new URL(base),
+    title,
+    description,
+    alternates: {
+      canonical: `${base}/${locale}${path}`,
+      languages: {
+        "zh-CN": `${base}/zh${path}`,
+        "en-US": `${base}/en${path}`,
+        "x-default": `${base}/zh${path}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      siteName: "FilePomelo",
+      type: "website",
+      locale: locale === "zh" ? "zh_CN" : "en_US",
+      url: `${base}/${locale}${path}`,
+      images: [{ url: `${base}/og-image.png`, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${base}/og-image.png`],
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

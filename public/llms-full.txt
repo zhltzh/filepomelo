@@ -1,0 +1,1381 @@
+# FilePomelo — complete content reference
+
+> Local file compression tools for images and documents.
+> Full text of every public page on https://compress.aixuno.com, generated for language models.
+> The condensed index is at https://compress.aixuno.com/llms.txt.
+> Generated 2026-11-03. 22 pages.
+
+## Contents
+
+- [FilePomelo - Free Online File Compressor | Images, PDF, Video &amp; Audio](https://compress.aixuno.com/en/)
+- [Audio Compressor — FilePomelo](https://compress.aixuno.com/en/audio-compressor/)
+- [Font Compressor — FilePomelo](https://compress.aixuno.com/en/font-compressor/)
+- [Image Compressor — FilePomelo](https://compress.aixuno.com/en/image-compressor/)
+- [Image Converter — FilePomelo](https://compress.aixuno.com/en/image-converter/)
+- [PDF Compressor — FilePomelo](https://compress.aixuno.com/en/pdf-compressor/)
+- [Privacy Policy - FilePomelo](https://compress.aixuno.com/en/privacy/)
+- [All Tools — FilePomelo](https://compress.aixuno.com/en/tools/)
+- [Unzip — FilePomelo](https://compress.aixuno.com/en/unzip/)
+- [Video Compressor — FilePomelo](https://compress.aixuno.com/en/video-compressor/)
+- [ZIP Compressor — FilePomelo](https://compress.aixuno.com/en/zip-compressor/)
+- [FilePomelo - 免费在线文件压缩器 | 图片、PDF、视频、音频本地压缩](https://compress.aixuno.com/zh/)
+- [音频压缩 — FilePomelo](https://compress.aixuno.com/zh/audio-compressor/)
+- [字体压缩 — FilePomelo](https://compress.aixuno.com/zh/font-compressor/)
+- [图片压缩 — FilePomelo](https://compress.aixuno.com/zh/image-compressor/)
+- [图片格式转换 — FilePomelo](https://compress.aixuno.com/zh/image-converter/)
+- [PDF 压缩 — FilePomelo](https://compress.aixuno.com/zh/pdf-compressor/)
+- [隐私政策 - FilePomelo](https://compress.aixuno.com/zh/privacy/)
+- [全部工具 — FilePomelo](https://compress.aixuno.com/zh/tools/)
+- [ZIP 解压 — FilePomelo](https://compress.aixuno.com/zh/unzip/)
+- [视频压缩 — FilePomelo](https://compress.aixuno.com/zh/video-compressor/)
+- [ZIP 压缩 — FilePomelo](https://compress.aixuno.com/zh/zip-compressor/)
+
+---
+
+## FilePomelo - Free Online File Compressor | Images, PDF, Video &amp; Audio
+
+URL: https://compress.aixuno.com/en/
+Summary: FilePomelo offers completely free online file compression: images, PDF, video and audio are all compressed locally in your browser. No upload, no server, your files stay private.
+
+100% Local · Files Never Uploaded Compress images, PDF, video and audio online 
+ All compression, conversion and unzip happen in your browser — nothing is uploaded to any server. Batch processing, progress tracking and ZIP download included.
+ Formats: JPG PNG GIF WebP AVIF SVG · PDF · MP4 MOV MKV FLV · MP3 OGG AAC WMA · ZIP · TTF OTF
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ Compression Level Maximum Recommended High quality Target size KB 
+
+ All Compression Tools
+ Pick a tool to get started
+ 
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+ jpg jpeg png gif 
+ 
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+ pdf 
+ 
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+ mp4 mov mkv flv 
+ 
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+ mp3 ogg aac wma 
+ 
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+ zip 
+ 
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+ jpg jpeg png webp 
+ 
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+ zip 
+ 
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+ ttf otf 
+ 
+
+ Why FilePomelo
+ The all-in-one compressor in your browser
+ 
+ 100% Local
+ Files never leave your device. Safe for sensitive material
+
+ 
+ Completely Free
+ No sign-up, no limits
+
+ 
+ Batch Compress
+ Process many files at once, download as a zip
+
+ 
+ All Formats
+ Images, PDF, video, audio and ZIP in one place
+
+ Privacy Promise
+ All processing happens locally in your browser. Files are never uploaded. Compression engines are loaded on demand and cached locally, so repeat use needs no re-download.
+
+---
+
+## Audio Compressor — FilePomelo
+
+URL: https://compress.aixuno.com/en/audio-compressor/
+Summary: Compress MP3, OGG, AAC, WMA and more
+
+Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+
+ 100% Free Local processing, no upload No sign-up needed 
+ 
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ Compression Level Maximum Recommended High quality Target size KB 
+
+ How to use Audio Compressor
+ 1
+ Upload files
+ Drag & drop or click to choose files. Batch upload supported
+
+ 2
+ Choose a level
+ Pick maximum, recommended or high-quality compression
+
+ 3
+ Download results
+ Download files individually or as a zip archive
+
+ 
+ FAQ 
+ Related Tools
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+
+---
+
+## Font Compressor — FilePomelo
+
+URL: https://compress.aixuno.com/en/font-compressor/
+Summary: Compress TTF/OTF fonts to WOFF2 web font format
+
+Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+
+ 100% Free Local processing, no upload No sign-up needed 
+ 
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ How to use Font Compressor
+ 1
+ Upload files
+ Drag & drop or click to choose files. Batch upload supported
+
+ 2
+ Choose a level
+ Pick maximum, recommended or high-quality compression
+
+ 3
+ Download results
+ Download files individually or as a zip archive
+
+ 
+ FAQ 
+ Related Tools
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+
+---
+
+## Image Compressor — FilePomelo
+
+URL: https://compress.aixuno.com/en/image-compressor/
+Summary: Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+ 100% Free Local processing, no upload No sign-up needed 
+ 
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ Compression Level Maximum Recommended High quality Target size KB 
+
+ How to use Image Compressor
+ 1
+ Upload files
+ Drag & drop or click to choose files. Batch upload supported
+
+ 2
+ Choose a level
+ Pick maximum, recommended or high-quality compression
+
+ 3
+ Download results
+ Download files individually or as a zip archive
+
+ 
+ FAQ 
+ Related Tools
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+
+---
+
+## Image Converter — FilePomelo
+
+URL: https://compress.aixuno.com/en/image-converter/
+Summary: Convert between JPG, PNG, WebP and AVIF formats
+
+Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+
+ 100% Free Local processing, no upload No sign-up needed 
+ 
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ Target format JPG PNG WebP AVIF 
+ Quality 80 
+
+ How to use Image Converter
+ 1
+ Upload files
+ Drag & drop or click to choose files. Batch upload supported
+
+ 2
+ Choose a level
+ Pick maximum, recommended or high-quality compression
+
+ 3
+ Download results
+ Download files individually or as a zip archive
+
+ 
+ FAQ 
+ Related Tools
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+
+---
+
+## PDF Compressor — FilePomelo
+
+URL: https://compress.aixuno.com/en/pdf-compressor/
+Summary: Compress PDF files to reduce size
+
+PDF Compressor
+ Compress PDF files to reduce size
+
+ 100% Free Local processing, no upload No sign-up needed 
+ 
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ Compression Level Maximum Recommended High quality Target size KB 
+
+ How to use PDF Compressor
+ 1
+ Upload files
+ Drag & drop or click to choose files. Batch upload supported
+
+ 2
+ Choose a level
+ Pick maximum, recommended or high-quality compression
+
+ 3
+ Download results
+ Download files individually or as a zip archive
+
+ 
+ FAQ 
+ Related Tools
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+
+---
+
+## Privacy Policy - FilePomelo
+
+URL: https://compress.aixuno.com/en/privacy/
+Summary: FilePomelo privacy policy: all files are processed locally in your browser and never uploaded to any server.
+
+Privacy Policy
+ Last updated: September 2026
+ 1. Files never leave your device
+ All compression, conversion and extraction features of FilePomelo run locally in your browser (WebAssembly / WebCodecs / Canvas). File data is never sent to any server. Closing the page destroys everything instantly.
+
+ 2. What we collect
+ This site has no accounts and does not collect file names, file contents or personal identity information. Basic aggregated usage stats (e.g. page views, referrers) may be kept to understand site usage.
+
+ 3. Cookies and tracking
+ No advertising or tracking cookies, and no third-party ad or analytics scripts. If anonymous statistics (e.g. page views) are added later, only aggregated data will be collected.
+
+ 4. Third-party services
+ The site is hosted on GitHub Pages (GitHub, Inc.). GitHub may record access logs (e.g. IP, User-Agent) under its own privacy policy; see GitHub’s official policy for details.
+
+ 5. Contact
+ Questions about this policy? Reach us via the site footer or the GitHub repository (github.com/zhltzh/filepomelo).
+
+---
+
+## All Tools — FilePomelo
+
+URL: https://compress.aixuno.com/en/tools/
+Summary: FilePomelo provides the following file compression tools, all running locally in your browser.
+
+All Tools
+ FilePomelo provides the following file compression tools, all running locally in your browser.
+ 
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+ jpg jpeg png gif 
+ 
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+ pdf 
+ 
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+ mp4 mov mkv flv 
+ 
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+ mp3 ogg aac wma 
+ 
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+ zip 
+ 
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+ jpg jpeg png webp 
+ 
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+ zip 
+ 
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+ ttf otf
+
+---
+
+## Unzip — FilePomelo
+
+URL: https://compress.aixuno.com/en/unzip/
+Summary: Extract ZIP archives locally in your browser
+
+Unzip
+ Extract ZIP archives locally in your browser
+
+ 100% Free Local processing, no upload No sign-up needed 
+ 
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ How to use Unzip
+ 1
+ Upload files
+ Drag & drop or click to choose files. Batch upload supported
+
+ 2
+ Choose a level
+ Pick maximum, recommended or high-quality compression
+
+ 3
+ Download results
+ Download files individually or as a zip archive
+
+ 
+ FAQ 
+ Related Tools
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+
+---
+
+## Video Compressor — FilePomelo
+
+URL: https://compress.aixuno.com/en/video-compressor/
+Summary: Compress MP4, MOV, MKV, FLV and more
+
+Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+
+ 100% Free Local processing, no upload No sign-up needed 
+ 
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ Compression Level Maximum Recommended High quality Target size KB 
+
+ How to use Video Compressor
+ 1
+ Upload files
+ Drag & drop or click to choose files. Batch upload supported
+
+ 2
+ Choose a level
+ Pick maximum, recommended or high-quality compression
+
+ 3
+ Download results
+ Download files individually or as a zip archive
+
+ 
+ FAQ 
+ Related Tools
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+
+ 
+ ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+
+---
+
+## ZIP Compressor — FilePomelo
+
+URL: https://compress.aixuno.com/en/zip-compressor/
+Summary: Package multiple files into one ZIP archive, 100% local
+
+ZIP Compressor
+ Package multiple files into one ZIP archive, 100% local
+
+ 100% Free Local processing, no upload No sign-up needed 
+ 
+
+ 
+ Drop files here
+ or click to select · Ctrl+V to paste · choose a folder
+ Select files Select folder Ctrl+V paste 
+ Supports images, PDF, video and audio. Mixed files are auto-detected and routed.
+
+ Compression Level Fast Recommended Maximum 
+
+ How to use ZIP Compressor
+ 1
+ Upload files
+ Drag & drop or click to choose files. Batch upload supported
+
+ 2
+ Choose a level
+ Pick maximum, recommended or high-quality compression
+
+ 3
+ Download results
+ Download files individually or as a zip archive
+
+ 
+ FAQ 
+ Related Tools
+ 
+ Image Compressor
+ Compress JPG, PNG, GIF, WebP, AVIF and SVG images
+
+ 
+ PDF Compressor
+ Compress PDF files to reduce size
+
+ 
+ Video Compressor
+ Compress MP4, MOV, MKV, FLV and more
+
+ 
+ Audio Compressor
+ Compress MP3, OGG, AAC, WMA and more
+
+ 
+ Image Converter
+ Convert between JPG, PNG, WebP and AVIF formats
+
+ 
+ Unzip
+ Extract ZIP archives locally in your browser
+
+ 
+ Font Compressor
+ Compress TTF/OTF fonts to WOFF2 web font format
+
+---
+
+## FilePomelo - 免费在线文件压缩器 | 图片、PDF、视频、音频本地压缩
+
+URL: https://compress.aixuno.com/zh/
+Summary: FilePomelo 提供完全免费的在线文件压缩工具：图片、PDF、视频、音频全部在浏览器本地压缩，无需上传服务器，保护你的文件隐私。
+
+100% 本地处理 · 文件不上传 在线压缩 图片、PDF、视频和音频 
+ 所有压缩、转换与解压均在浏览器内完成，文件不会上传到任何服务器。支持批量处理、进度展示与 ZIP 打包下载。
+ 支持格式：JPG PNG GIF WebP AVIF SVG · PDF · MP4 MOV MKV FLV · MP3 OGG AAC WMA · ZIP · TTF OTF
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 压缩档位 最大压缩 推荐 高质量 目标大小 KB 
+
+ 所有压缩工具
+ 选择一个工具开始压缩
+ 
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+ jpg jpeg png gif 
+ 
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+ pdf 
+ 
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+ mp4 mov mkv flv 
+ 
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+ mp3 ogg aac wma 
+ 
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+ zip 
+ 
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+ jpg jpeg png webp 
+ 
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+ zip 
+ 
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+ ttf otf 
+ 
+
+ 为什么选择 FilePomelo
+ 浏览器里的全能压缩工具
+ 
+ 100% 本地处理
+ 文件不上传服务器，敏感素材也放心
+
+ 
+ 完全免费
+ 无需注册，不限次数
+
+ 
+ 批量压缩
+ 多文件一次处理，zip 打包下载
+
+ 
+ 全格式覆盖
+ 图片、PDF、视频、音频、ZIP 一站搞定
+
+ 隐私承诺
+ 所有处理都在你的浏览器本地完成，文件不会上传到任何服务器。压缩引擎按需加载并在本地缓存，二次使用无需重复下载。
+
+---
+
+## 音频压缩 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/audio-compressor/
+Summary: 压缩 MP3、OGG、AAC、WMA 等音频
+
+音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+
+ 完全免费 本地处理，不上传服务器 无需注册，即刻使用 
+ 
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 压缩档位 最大压缩 推荐 高质量 目标大小 KB 
+
+ 如何使用 音频压缩
+ 1
+ 上传文件
+ 拖拽或点击选择需要压缩的文件，支持批量上传
+
+ 2
+ 选择压缩档位
+ 按需求选择最大压缩、推荐或高质量档位
+
+ 3
+ 下载结果
+ 处理完成后可单文件下载或 zip 打包下载
+
+ 
+ 常见问题 
+ 相关工具
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+
+---
+
+## 字体压缩 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/font-compressor/
+Summary: 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+
+字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+
+ 完全免费 本地处理，不上传服务器 无需注册，即刻使用 
+ 
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 如何使用 字体压缩
+ 1
+ 上传文件
+ 拖拽或点击选择需要压缩的文件，支持批量上传
+
+ 2
+ 选择压缩档位
+ 按需求选择最大压缩、推荐或高质量档位
+
+ 3
+ 下载结果
+ 处理完成后可单文件下载或 zip 打包下载
+
+ 
+ 常见问题 
+ 相关工具
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+---
+
+## 图片压缩 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/image-compressor/
+Summary: 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+ 完全免费 本地处理，不上传服务器 无需注册，即刻使用 
+ 
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 压缩档位 最大压缩 推荐 高质量 目标大小 KB 
+
+ 如何使用 图片压缩
+ 1
+ 上传文件
+ 拖拽或点击选择需要压缩的文件，支持批量上传
+
+ 2
+ 选择压缩档位
+ 按需求选择最大压缩、推荐或高质量档位
+
+ 3
+ 下载结果
+ 处理完成后可单文件下载或 zip 打包下载
+
+ 
+ 常见问题 
+ 相关工具
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+
+---
+
+## 图片格式转换 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/image-converter/
+Summary: 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+ 完全免费 本地处理，不上传服务器 无需注册，即刻使用 
+ 
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 目标格式 JPG PNG WebP AVIF 
+ 质量 80 
+
+ 如何使用 图片格式转换
+ 1
+ 上传文件
+ 拖拽或点击选择需要压缩的文件，支持批量上传
+
+ 2
+ 选择压缩档位
+ 按需求选择最大压缩、推荐或高质量档位
+
+ 3
+ 下载结果
+ 处理完成后可单文件下载或 zip 打包下载
+
+ 
+ 常见问题 
+ 相关工具
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+
+---
+
+## PDF 压缩 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/pdf-compressor/
+Summary: 压缩 PDF 文件，减小体积
+
+PDF 压缩
+ 压缩 PDF 文件，减小体积
+
+ 完全免费 本地处理，不上传服务器 无需注册，即刻使用 
+ 
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 压缩档位 最大压缩 推荐 高质量 目标大小 KB 
+
+ 如何使用 PDF 压缩
+ 1
+ 上传文件
+ 拖拽或点击选择需要压缩的文件，支持批量上传
+
+ 2
+ 选择压缩档位
+ 按需求选择最大压缩、推荐或高质量档位
+
+ 3
+ 下载结果
+ 处理完成后可单文件下载或 zip 打包下载
+
+ 
+ 常见问题 
+ 相关工具
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+
+---
+
+## 隐私政策 - FilePomelo
+
+URL: https://compress.aixuno.com/zh/privacy/
+Summary: FilePomelo 隐私政策：所有文件均在浏览器本地处理，不会上传到任何服务器。
+
+隐私政策
+ 最后更新：2026 年 9 月
+ 1. 文件不上传，处理全在本机
+ FilePomelo 的所有压缩、转换与解压功能都在你的浏览器本地完成（WebAssembly / WebCodecs / Canvas），文件数据不会发送到任何服务器。关闭页面即完全销毁，不产生残留。
+
+ 2. 我们收集什么
+ 本站不设账号系统，不收集文件名、文件内容或个人身份信息。可能仅保留基础的访问统计（如页面浏览量、来源），用于了解站点使用情况。
+
+ 3. Cookie 与跟踪
+ 本站不使用广告追踪类 Cookie，不接入第三方广告或分析脚本。如后续接入匿名统计（如页面 PV），将仅收集聚合数据，不包含可识别个人身份的信息。
+
+ 4. 第三方服务
+ 站点托管于 GitHub Pages（GitHub 公司）。GitHub 可能按其隐私政策记录访问日志（如 IP、User-Agent），详情见 GitHub 官网隐私政策。
+
+ 5. 联系方式
+ 如对本隐私政策有任何疑问，可通过站点页脚或 GitHub 仓库（github.com/zhltzh/filepomelo）与我们联系。
+
+---
+
+## 全部工具 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/tools/
+Summary: FilePomelo 提供以下文件压缩工具，全部在浏览器本地完成。
+
+全部工具
+ FilePomelo 提供以下文件压缩工具，全部在浏览器本地完成。
+ 
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+ jpg jpeg png gif 
+ 
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+ pdf 
+ 
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+ mp4 mov mkv flv 
+ 
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+ mp3 ogg aac wma 
+ 
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+ zip 
+ 
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+ jpg jpeg png webp 
+ 
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+ zip 
+ 
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+ ttf otf
+
+---
+
+## ZIP 解压 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/unzip/
+Summary: 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+ 完全免费 本地处理，不上传服务器 无需注册，即刻使用 
+ 
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 如何使用 ZIP 解压
+ 1
+ 上传文件
+ 拖拽或点击选择需要压缩的文件，支持批量上传
+
+ 2
+ 选择压缩档位
+ 按需求选择最大压缩、推荐或高质量档位
+
+ 3
+ 下载结果
+ 处理完成后可单文件下载或 zip 打包下载
+
+ 
+ 常见问题 
+ 相关工具
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+
+---
+
+## 视频压缩 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/video-compressor/
+Summary: 压缩 MP4、MOV、MKV、FLV 等视频
+
+视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+
+ 完全免费 本地处理，不上传服务器 无需注册，即刻使用 
+ 
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 压缩档位 最大压缩 推荐 高质量 目标大小 KB 
+
+ 如何使用 视频压缩
+ 1
+ 上传文件
+ 拖拽或点击选择需要压缩的文件，支持批量上传
+
+ 2
+ 选择压缩档位
+ 按需求选择最大压缩、推荐或高质量档位
+
+ 3
+ 下载结果
+ 处理完成后可单文件下载或 zip 打包下载
+
+ 
+ 常见问题 
+ 相关工具
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+
+ 
+ ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式
+
+---
+
+## ZIP 压缩 — FilePomelo
+
+URL: https://compress.aixuno.com/zh/zip-compressor/
+Summary: 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ZIP 压缩
+ 把多个文件打包压缩成一个 ZIP，全部本地处理
+
+ 完全免费 本地处理，不上传服务器 无需注册，即刻使用 
+ 
+
+ 
+ 拖拽文件到这里
+ 或点击选择文件 · Ctrl+V 粘贴 · 选择文件夹
+ 选择文件 选择文件夹 Ctrl+V 粘贴 
+ 支持图片、PDF、视频、音频，混合文件自动识别并分发
+
+ 压缩级别 快速 推荐 最大压缩 
+
+ 如何使用 ZIP 压缩
+ 1
+ 上传文件
+ 拖拽或点击选择需要压缩的文件，支持批量上传
+
+ 2
+ 选择压缩档位
+ 按需求选择最大压缩、推荐或高质量档位
+
+ 3
+ 下载结果
+ 处理完成后可单文件下载或 zip 打包下载
+
+ 
+ 常见问题 
+ 相关工具
+ 
+ 图片压缩
+ 压缩 JPG、PNG、GIF、WebP、AVIF、SVG 图片
+
+ 
+ PDF 压缩
+ 压缩 PDF 文件，减小体积
+
+ 
+ 视频压缩
+ 压缩 MP4、MOV、MKV、FLV 等视频
+
+ 
+ 音频压缩
+ 压缩 MP3、OGG、AAC、WMA 等音频
+
+ 
+ 图片格式转换
+ 在 JPG、PNG、WebP、AVIF 之间互转图片格式
+
+ 
+ ZIP 解压
+ 在浏览器本地解压 ZIP 压缩包并下载其中的文件
+
+ 
+ 字体压缩
+ 把 TTF、OTF 字体压缩为 WOFF2 网页字体格式

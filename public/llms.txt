@@ -2,6 +2,8 @@
 
 > Free browser-based file compressor for images, PDF, video, audio, archives and fonts. Files are processed locally in the browser and are never uploaded to an Aixuno server.
 
+> Full text of every page (22 pages): https://compress.aixuno.com/llms-full.txt
+
 ## Site
 
 - Name: Aixuno Compress (formerly FilePomelo)

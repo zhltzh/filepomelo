@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { SiteNetwork } from "@/components/site-network";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -83,6 +84,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <div className="flex min-h-screen flex-col">
+        <SiteNetwork />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

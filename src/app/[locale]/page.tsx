@@ -138,6 +138,25 @@ export default async function HomePage({
           <p className="mx-auto mt-2 max-w-2xl text-gray-500">{t("privacyDesc")}</p>
         </div>
       </section>
+
+      <section className="border-t bg-white">
+        <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
+          <figure className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+            <img
+              src="/compress-interface.webp"
+              alt="FilePomelo 压缩界面：选择多个文件后设置压缩质量，然后一键开始压缩"
+              width="2560"
+              height="1800"
+              loading="lazy"
+              decoding="async"
+              className="h-auto w-full"
+            />
+          </figure>
+          <p className="mt-4 text-center text-sm text-gray-500">
+            支持批量选择，压缩在浏览器本地完成，文件不会上传到服务器。
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

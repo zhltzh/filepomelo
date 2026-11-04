@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { TOOLS } from "@/config/tools";
 import { ShareLinks } from "@/components/share-links";
+import { ContactEmail } from "@/components/contact-email";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -41,13 +42,15 @@ export function Footer() {
             {t("privacy")}
           </Link>
           {" · "}
+          <ContactEmail label={t("feedback")} className="underline-offset-2 hover:underline" />
+          {" · "}
           <a
             href="https://github.com/zhltzh/filepomelo/issues/new"
             target="_blank"
             rel="noopener noreferrer"
             className="underline-offset-2 hover:underline"
           >
-            {t("feedback")}
+            GitHub
           </a>
         </div>
 

@@ -118,6 +118,18 @@ export function ToolLayout({ tool, children, faqItems }: ToolLayoutProps) {
                 applicationCategory: "UtilitiesApplication",
                 operatingSystem: "Any",
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+                featureList: [
+                  `支持 ${tool.formats.join("、")} 格式`,
+                  "在浏览器本地完成，不上传服务器",
+                  "无需注册，无水印，无次数限制",
+                ],
+                isAccessibleForFree: true,
+                screenshot: {
+                  "@type": "ImageObject",
+                  url: "https://compress.aixuno.com/screenshot.png",
+                  width: 1280,
+                  height: 800,
+                },
               }),
             }}
           />

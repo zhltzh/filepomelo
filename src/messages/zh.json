@@ -26,6 +26,7 @@
     "targetSizeLabel": "目标大小",
     "targetSizePlaceholder": "如 500",
     "targetSizeUnit": "KB",
+    "limitNotice": "最多 {limit} 个文件，已忽略 {over} 个",
     "compressing": "处理中…",
     "processing": "处理中",
     "pending": "等待中",

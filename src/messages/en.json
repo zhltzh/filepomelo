@@ -26,6 +26,7 @@
     "targetSizeLabel": "Target size",
     "targetSizePlaceholder": "e.g. 500",
     "targetSizeUnit": "KB",
+    "limitNotice": "Up to {limit} files, {over} ignored",
     "compressing": "Processing…",
     "processing": "Processing",
     "pending": "Queued",

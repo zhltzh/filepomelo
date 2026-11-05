@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import {
   Play,
@@ -54,6 +54,18 @@ const QUALITY_OPTIONS: QualitySetting[] = [
   { key: "high", value: 80 },
 ];
 
+/** 各类别单次任务数量上限，防止一次拖入过多大文件导致内存崩溃 */
+const CATEGORY_LIMITS: Record<string, number> = {
+  image: 50,
+  video: 5,
+  audio: 20,
+  pdf: 20,
+  zip: 20,
+  font: 20,
+};
+/** 混合首页（未指定类别）使用的上限 */
+const DEFAULT_LIMIT = 20;
+
 /** 并发池：同时最多处理 limit 个任务 */
 async function runPool(
   tasks: FileTask[],
@@ -86,6 +98,11 @@ export function CompressorHub({ category }: CompressorHubProps) {
   /** P5c 目标尺寸（KB），填入后对所有待处理任务生效，自动二分搜索最接近的质量档位 */
   const [targetKb, setTargetKb] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
+  /** 超出类别上限时的提示，null 表示无提示 */
+  const [limitNotice, setLimitNotice] = useState<{
+    limit: number;
+    overCount: number;
+  } | null>(null);
   const processingRef = useRef(false);
 
   const updateTask = useCallback((id: string, patch: Partial<FileTask>) => {
@@ -114,10 +131,25 @@ export function CompressorHub({ category }: CompressorHubProps) {
           error: allowed ? null : te("unsupported", { ext: `.${ext}` }),
         };
       });
-      setTasks((prev) => [...prev, ...newTasks]);
+      // 按类别截断，避免一次拖入过多大文件导致内存崩溃
+      const limit = category
+        ? CATEGORY_LIMITS[category] ?? DEFAULT_LIMIT
+        : DEFAULT_LIMIT;
+      const remaining = Math.max(0, limit - tasks.length);
+      const accepted = newTasks.slice(0, remaining);
+      setLimitNotice(
+        newTasks.length > accepted.length
+          ? { limit, overCount: newTasks.length - accepted.length }
+          : null
+      );
+      // 函数式更新内再按真实 prev 截断，避免并发多次拖入时突破上限
+      setTasks((prev) => [
+        ...prev,
+        ...newTasks.slice(0, Math.max(0, limit - prev.length)),
+      ]);
 
       // 文件加入后把操作区滚入视野，避免「开始压缩」按钮落在第二屏
-      if (newTasks.some((t) => t.status === "pending")) {
+      if (accepted.some((t) => t.status === "pending")) {
         requestAnimationFrame(() => {
           setTimeout(() => {
             document.querySelector("[data-compress-actions]")?.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -125,7 +157,7 @@ export function CompressorHub({ category }: CompressorHubProps) {
         });
       }
     },
-    [category, te]
+    [category, te, tasks.length]
   );
 
   const processOne = useCallback(
@@ -209,6 +241,7 @@ export function CompressorHub({ category }: CompressorHubProps) {
   const clearAll = useCallback(() => {
     if (processingRef.current) return;
     setTasks([]);
+    setLimitNotice(null);
   }, []);
 
   const handleDownloadOne = useCallback((task: FileTask) => {
@@ -247,6 +280,19 @@ export function CompressorHub({ category }: CompressorHubProps) {
   const pendingCount = tasks.filter((x) => x.status === "pending").length;
   const completedCount = tasks.filter((x) => x.status === "completed" && x.outputBlob).length;
 
+  // 首次出现处理结果时把「下载」按钮滚入视野，避免下载按钮落在第二屏
+  const prevCompletedRef = useRef(0);
+  useEffect(() => {
+    if (completedCount > 0 && prevCompletedRef.current === 0) {
+      requestAnimationFrame(() => {
+        document
+          .querySelector("[data-compress-actions]")
+          ?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
+    }
+    prevCompletedRef.current = completedCount;
+  }, [completedCount]);
+
   return (
     <div className="space-y-6">
       <DropZone onFilesSelected={addFiles} />
@@ -284,6 +330,16 @@ export function CompressorHub({ category }: CompressorHubProps) {
           <span className="text-xs text-gray-500">{t("targetSizeUnit")}</span>
         </div>
       </div>
+
+      {/* 数量上限提示 */}
+      {limitNotice && (
+        <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-700">
+          {t("limitNotice", {
+            limit: limitNotice.limit,
+            over: limitNotice.overCount,
+          })}
+        </div>
+      )}
 
       {/* 任务列表 */}
       {tasks.length > 0 && (
@@ -406,7 +462,7 @@ export function CompressorHub({ category }: CompressorHubProps) {
 
       {/* 操作按钮 */}
       {(pendingCount > 0 || completedCount > 0) && (
-        <div data-compress-actions className="flex flex-col gap-3 sm:flex-row">
+        <div data-compress-actions className="sticky bottom-0 z-10 flex flex-col gap-3 bg-white/95 pt-3 backdrop-blur sm:flex-row">
           {pendingCount > 0 && (
             <button
               onClick={startCompress}

@@ -115,6 +115,15 @@ export function CompressorHub({ category }: CompressorHubProps) {
         };
       });
       setTasks((prev) => [...prev, ...newTasks]);
+
+      // 文件加入后把操作区滚入视野，避免「开始压缩」按钮落在第二屏
+      if (newTasks.some((t) => t.status === "pending")) {
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            document.querySelector("[data-compress-actions]")?.scrollIntoView({ behavior: "smooth", block: "center" });
+          }, 120);
+        });
+      }
     },
     [category, te]
   );
@@ -397,7 +406,7 @@ export function CompressorHub({ category }: CompressorHubProps) {
 
       {/* 操作按钮 */}
       {(pendingCount > 0 || completedCount > 0) && (
-        <div className="flex flex-col gap-3 sm:flex-row">
+        <div data-compress-actions className="flex flex-col gap-3 sm:flex-row">
           {pendingCount > 0 && (
             <button
               onClick={startCompress}

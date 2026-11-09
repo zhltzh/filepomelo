@@ -1,0 +1,202 @@
+﻿User-agent: *
+Allow: /
+# 鏃犻渶鎶撳彇锛堟瘡涓垎缁勫唴 Allow 蹇呴』鍐欏湪 Disallow 涔嬪墠锛?
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+# AI search and assistant crawlers are explicitly welcome.
+# These lines matter because many sites still block them via a wildcard rule.
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+# 鍥藉唴鎼滅储寮曟搸
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Baiduspider-mobile
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Baiduspider-image
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Baiduspider-video
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Baiduspider-news
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: 360Spider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: HaosouSpider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Sogou web spider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Sogou inst spider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Sogou Pic Spider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: YisouSpider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Bytespider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: msnbot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+# 涓嶈缃?Crawl-delay锛氶潤鎬佺珯鐢辨悳绱㈠紩鎿庤嚜琛屽喅瀹氭姄鍙栭鐜囷紝閬垮厤鎷栨參鏀跺綍銆?
+Sitemap: https://compress.aixuno.com/sitemap.xml
+
+# 澶氱珯璇存槑锛氭湰鏂囦欢浠呴€傜敤浜?compress.aixuno.com銆?
+# pdf.compress.aixuno.com銆乧ompress.compress.aixuno.com銆乮mage.compress.aixuno.com銆乥g.compress.aixuno.com
+# 闇€鍚勮嚜閮ㄧ讲 robots.txt锛屽唴瀹圭粨鏋勪笌鏈枃浠跺畬鍏ㄤ竴鑷达紝浠呴渶鏇挎崲 Sitemap 琛屻€?

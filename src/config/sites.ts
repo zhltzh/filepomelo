@@ -1,4 +1,4 @@
-export type AixunoSiteId = "markdown" | "image" | "compress" | "pdf" | "bg" | "scan" | "tools";
+export type AixunoSiteId = "markdown" | "image" | "compress" | "pdf" | "bg" | "scan" | "restore" | "watermark";
 
 export type AixunoSite = {
   id: AixunoSiteId;
@@ -14,7 +14,8 @@ export const AIXUNO_SITES: AixunoSite[] = [
   { id: "pdf", href: "https://pdf.aixuno.com/", label: { zh: "PDF 工具", en: "PDF Tools" } },
   { id: "bg", href: "https://bg.aixuno.com/", label: { zh: "AI 抠图", en: "AI Cutout" } },
   { id: "scan", href: "https://scan.aixuno.com/", label: { zh: "文档扫描", en: "Document Scan" } },
-  { id: "tools", href: "https://tools.aixuno.com/", label: { zh: "AI 工具箱", en: "AI Tools" } },
+  { id: "restore", href: "https://restore.aixuno.com/", label: { zh: "老照片修复", en: "Photo Restore" } },
+  { id: "watermark", href: "https://watermark.aixuno.com/", label: { zh: "视频去水印", en: "Watermark Remover" } },
 ];
 
 export const CURRENT_SITE: AixunoSiteId = "compress";

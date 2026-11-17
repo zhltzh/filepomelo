@@ -1,4 +1,4 @@
-export type AixunoSiteId = "markdown" | "image" | "compress" | "pdf" | "bg";
+export type AixunoSiteId = "markdown" | "image" | "compress" | "pdf" | "bg" | "tools";
 
 export type AixunoSite = {
   id: AixunoSiteId;
@@ -13,6 +13,7 @@ export const AIXUNO_SITES: AixunoSite[] = [
   { id: "compress", href: "https://compress.aixuno.com/", label: { zh: "文件压缩", en: "File Compress" } },
   { id: "pdf", href: "https://pdf.aixuno.com/", label: { zh: "PDF 工具", en: "PDF Tools" } },
   { id: "bg", href: "https://bg.aixuno.com/", label: { zh: "AI 抠图", en: "AI Cutout" } },
+  { id: "tools", href: "https://tools.aixuno.com/", label: { zh: "AI 工具箱", en: "AI Tools" } },
 ];
 
 export const CURRENT_SITE: AixunoSiteId = "compress";

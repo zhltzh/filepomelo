@@ -114,6 +114,37 @@ export function ImageConverter() {
     setItems((prev) => prev.filter((i) => i.id !== id));
   }, []);
 
+  // 目标格式/质量变化后，旧的转换结果不再匹配用户意图：重置为待转换
+  const invalidateDone = useCallback(() => {
+    setItems((prev) =>
+      prev.map((i) =>
+        i.status === "done" || i.status === "error"
+          ? { ...i, status: "pending" as const, outBlob: undefined, error: undefined }
+          : i
+      )
+    );
+  }, []);
+
+  const changeFormat = useCallback(
+    (f: TargetFormat) => {
+      setFormat((prev) => {
+        if (prev !== f) invalidateDone();
+        return f;
+      });
+    },
+    [invalidateDone]
+  );
+
+  const changeQuality = useCallback(
+    (q: number) => {
+      setQuality((prev) => {
+        if (prev !== q) invalidateDone();
+        return q;
+      });
+    },
+    [invalidateDone]
+  );
+
   const convertAll = useCallback(async () => {
     const pending = items.filter((i) => i.status !== "done");
     if (pending.length === 0) return;
@@ -158,7 +189,7 @@ export function ImageConverter() {
           {(["jpeg", "png", "webp", "avif"] as TargetFormat[]).map((f) => (
             <button
               key={f}
-              onClick={() => setFormat(f)}
+              onClick={() => changeFormat(f)}
               className={cn(
                 "rounded-full border px-4 py-1.5 text-sm transition-colors",
                 format === f
@@ -181,7 +212,7 @@ export function ImageConverter() {
               min={10}
               max={100}
               value={quality}
-              onChange={(e) => setQuality(Number(e.target.value))}
+              onChange={(e) => changeQuality(Number(e.target.value))}
               className="w-36 accent-primary"
             />
             <span className="w-9 font-medium text-gray-700">{quality}</span>

@@ -46,7 +46,14 @@ export async function loadEngine(key: EngineKey): Promise<EngineHandler> {
     if (!factory) {
       throw new Error(`No engine registered for "${key}"`);
     }
-    inst = await factory();
+    try {
+      inst = await factory();
+    } catch (err) {
+      // 懒加载 chunk 失败（常见于新版本部署后旧页面引用已删除的 chunk）：
+      // 清除失败实例缓存，下次调用允许重试；并由全局监听器引导刷新
+      instances.delete(key);
+      throw err;
+    }
     instances.set(key, inst);
   }
   return inst;

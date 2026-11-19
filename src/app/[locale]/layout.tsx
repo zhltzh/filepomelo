@@ -20,7 +20,8 @@ export async function generateMetadata({
   const { locale } = params;
   const t = await getTranslations({ locale, namespace: "Meta" });
   const base = "https://compress.aixuno.com";
-  const url = `${base}/${locale}`;
+  // trailingSlash: true，实际 URL 带尾斜杠，canonical 必须一致避免重复内容
+  const url = `${base}/${locale}/`;
   return {
     metadataBase: new URL(base),
     title: t("title"),
@@ -29,9 +30,9 @@ export async function generateMetadata({
     alternates: {
       canonical: url,
       languages: {
-        "zh-CN": `${base}/zh`,
-        "en-US": `${base}/en`,
-        "x-default": `${base}/zh`,
+        "zh-CN": `${base}/zh/`,
+        "en-US": `${base}/en/`,
+        "x-default": `${base}/zh/`,
       },
     },
     openGraph: {

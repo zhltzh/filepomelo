@@ -1,11 +1,22 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { TOOLS } from "@/config/tools";
 import { ShareLinks } from "@/components/share-links";
 import { ContactEmail } from "@/components/contact-email";
 
+const SITES = [
+  { href: "https://aixuno.com/", label: { zh: "Markdown 转换", en: "Markdown" } },
+  { href: "https://image.aixuno.com/", label: { zh: "Pixkit 图片", en: "Pixkit Images" } },
+  { href: "https://pdf.aixuno.com/", label: { zh: "PDF 工具", en: "PDF Tools" } },
+  { href: "https://bg.aixuno.com/", label: { zh: "AI 抠图", en: "AI Cutout" } },
+  { href: "https://scan.aixuno.com/", label: { zh: "文档扫描", en: "Document Scan" } },
+  { href: "https://restore.aixuno.com/", label: { zh: "老照片修复", en: "Photo Restore" } },
+  { href: "https://watermark.aixuno.com/", label: { zh: "视频去水印", en: "Watermark Remover" } },
+];
+
 export function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
   const now = new Date().getFullYear();
 
   return (
@@ -34,6 +45,23 @@ export function Footer() {
               ))}
             </ul>
           </div>
+        </div>
+
+        <div className="mt-8 border-t border-gray-200 pt-6">
+          <div className="text-xs font-semibold uppercase tracking-widest text-gray-400">
+            {locale === "zh" ? "Aixuno 工具生态" : "Aixuno Tools"}
+          </div>
+          <nav aria-label="Aixuno" className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {SITES.map((site) => (
+              <a
+                key={site.href}
+                href={site.href}
+                className="text-gray-500 transition-colors hover:text-primary"
+              >
+                {locale === "zh" ? site.label.zh : site.label.en}
+              </a>
+            ))}
+          </nav>
         </div>
 
         <div className="mt-8 border-t border-gray-200 pt-6 text-center text-xs text-gray-500">

@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+// Next.js 会为 not-found 自动注入 noindex，这里只覆盖标题避免出现通用站点标题
+export const metadata: Metadata = {
+  title: "页面未找到 - FilePomelo",
+};
 
 /** 全局 404 页（静态导出为 404.html） */
 export default function NotFound() {

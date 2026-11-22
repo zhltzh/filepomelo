@@ -28,6 +28,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified,
         changeFrequency: "weekly",
         priority: p === "" ? 1 : 0.8,
+        // 根 landing 为跳转页，不做双语 hreflang；其余路径标注 zh/en
+        ...(p === ""
+          ? {}
+          : {
+              alternates: {
+                languages: {
+                  "zh-CN": `${BASE}/zh${p}/`,
+                  "en-US": `${BASE}/en${p}/`,
+                  "x-default": `${BASE}/zh${p}/`,
+                },
+              },
+            }),
       });
     }
   }

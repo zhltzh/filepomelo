@@ -13,10 +13,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = params;
   const t = await getTranslations({ locale, namespace: "Privacy" });
+  const base = "https://compress.aixuno.com";
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: { canonical: `https://compress.aixuno.com/${locale}/privacy` },
+    // trailingSlash: true，实际 URL 带尾斜杠，canonical 与 hreflang 必须一致
+    alternates: {
+      canonical: `${base}/${locale}/privacy/`,
+      languages: {
+        "zh-CN": `${base}/zh/privacy/`,
+        "en-US": `${base}/en/privacy/`,
+        "x-default": `${base}/zh/privacy/`,
+      },
+    },
   };
 }
 

@@ -14,17 +14,35 @@ export async function generateMetadata({
   const { locale } = params;
   const t = await getTranslations({ locale, namespace: "Privacy" });
   const base = "https://compress.aixuno.com";
+  // trailingSlash: true，实际 URL 带尾斜杠，canonical 与 hreflang 必须一致
+  const url = `${base}/${locale}/privacy/`;
+  const title = t("metaTitle");
+  const description = t("metaDescription");
   return {
-    title: t("metaTitle"),
-    description: t("metaDescription"),
-    // trailingSlash: true，实际 URL 带尾斜杠，canonical 与 hreflang 必须一致
+    title,
+    description,
     alternates: {
-      canonical: `${base}/${locale}/privacy/`,
+      canonical: url,
       languages: {
         "zh-CN": `${base}/zh/privacy/`,
         "en-US": `${base}/en/privacy/`,
         "x-default": `${base}/zh/privacy/`,
       },
+    },
+    openGraph: {
+      title,
+      description,
+      siteName: "FilePomelo",
+      type: "website",
+      locale: locale === "zh" ? "zh_CN" : "en_US",
+      url,
+      images: [{ url: `${base}/og-image.png`, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${base}/og-image.png`],
     },
   };
 }

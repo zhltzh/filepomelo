@@ -34,6 +34,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
+      <head>
+        {/* 性能：提前建立百度统计连接，缩短首屏第三方请求延迟 */}
+        <link rel="preconnect" href="https://hm.baidu.com" />
+        <link rel="dns-prefetch" href="https://hm.baidu.com" />
+      </head>
       <body className="font-sans antialiased">
         <script
           type="application/ld+json"

@@ -7,6 +7,7 @@
   "Header": {
     "home": "首页",
     "tools": "全部工具",
+    "guides": "教程",
     "switchLang": "English"
   },
   "Home": {
@@ -182,6 +183,7 @@
   "Footer": {
     "desc": "FilePomelo - 免费在线文件压缩器。所有处理均在浏览器本地完成，文件不上传服务器。",
     "tools": "工具",
+    "guides": "教程",
     "privacy": "隐私政策",
     "terms": "服务条款",
     "feedback": "意见反馈",

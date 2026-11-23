@@ -7,6 +7,7 @@
   "Header": {
     "home": "Home",
     "tools": "All Tools",
+    "guides": "Guides",
     "switchLang": "中文"
   },
   "Home": {
@@ -182,6 +183,7 @@
   "Footer": {
     "desc": "FilePomelo - free online file compressor. Everything runs locally in your browser; files are never uploaded.",
     "tools": "Tools",
+    "guides": "Guides",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "feedback": "Feedback",

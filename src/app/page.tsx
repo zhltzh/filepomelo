@@ -33,7 +33,7 @@ const TOOLS = [
 
 const SITES = [
   { href: "https://aixuno.com/", name: "Markdown 转换" },
-  { href: "https://image.aixuno.com/", name: "Pixkit 图片" },
+  { href: "https://image.aixuno.com/", name: "Pixkit 图片批量处理" },
   { href: "https://pdf.aixuno.com/", name: "PDF 工具" },
   { href: "https://bg.aixuno.com/", name: "AI 抠图" },
   { href: "https://scan.aixuno.com/", name: "文档扫描" },

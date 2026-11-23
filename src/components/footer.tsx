@@ -6,7 +6,7 @@ import { ContactEmail } from "@/components/contact-email";
 
 const SITES = [
   { href: "https://aixuno.com/", label: { zh: "Markdown 转换", en: "Markdown" } },
-  { href: "https://image.aixuno.com/", label: { zh: "Pixkit 图片", en: "Pixkit Images" } },
+  { href: "https://image.aixuno.com/", label: { zh: "Pixkit 图片批量处理", en: "Pixkit Images" } },
   { href: "https://pdf.aixuno.com/", label: { zh: "PDF 工具", en: "PDF Tools" } },
   { href: "https://bg.aixuno.com/", label: { zh: "AI 抠图", en: "AI Cutout" } },
   { href: "https://scan.aixuno.com/", label: { zh: "文档扫描", en: "Document Scan" } },

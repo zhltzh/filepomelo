@@ -9,8 +9,8 @@ export type AixunoSite = {
 /** Shared Aixuno network. Links always point at the root path of each site. */
 export const AIXUNO_SITES: AixunoSite[] = [
   { id: "markdown", href: "https://aixuno.com/", label: { zh: "Markdown 转换", en: "Markdown" } },
-  { id: "image", href: "https://image.aixuno.com/", label: { zh: "图片批量处理", en: "Image Batch Processing" } },
-  { id: "compress", href: "https://compress.aixuno.com/", label: { zh: "文件压缩", en: "File Compression" } },
+  { id: "image", href: "https://image.aixuno.com/", label: { zh: "Pixkit 图片批量处理", en: "Pixkit Images" } },
+  { id: "compress", href: "https://compress.aixuno.com/", label: { zh: "文件压缩", en: "File Compress" } },
   { id: "pdf", href: "https://pdf.aixuno.com/", label: { zh: "PDF 工具", en: "PDF Tools" } },
   { id: "bg", href: "https://bg.aixuno.com/", label: { zh: "AI 抠图", en: "AI Cutout" } },
   { id: "scan", href: "https://scan.aixuno.com/", label: { zh: "文档扫描", en: "Document Scan" } },

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { HomeDropZone } from "@/components/home/home-drop-zone";
 
 /**
  * 根路径直出中文内容页：保证 SEO 收录与直访体验，
@@ -69,6 +70,7 @@ export default function RootHome() {
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-500 sm:text-base">
             图片、PDF、视频、音频全部在浏览器本地压缩，无需注册，文件不上传服务器。
           </p>
+          <HomeDropZone />
         </section>
 
         <section aria-label="全部工具" className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -9,6 +9,7 @@ const TONE: Record<AixunoSiteId, string> = {
   pdf: "from-rose-500 to-red-500",
   bg: "from-violet-500 to-indigo-500",
   scan: "from-blue-500 to-blue-700",
+  idphoto: "from-pink-400 to-rose-600",
   restore: "from-indigo-500 to-indigo-700",
   watermark: "from-cyan-500 to-blue-600",
 };
@@ -20,6 +21,7 @@ const MARK: Record<AixunoSiteId, string> = {
   pdf: "PDF",
   bg: "BG",
   scan: "DOC",
+  idphoto: "ID",
   restore: "FIX",
   watermark: "WM",
 };

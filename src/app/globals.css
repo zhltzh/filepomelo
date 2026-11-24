@@ -35,3 +35,95 @@
     @apply bg-white text-gray-900;
   }
 }
+
+/* ---- FilePomelo 改版动画（滚动入场 + 演示卡） ---- */
+
+.fp-reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fp-reveal.fp-in {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes fp-bar {
+  0% { width: 100%; }
+  42% { width: 26%; }
+  86% { width: 26%; }
+  100% { width: 100%; }
+}
+
+@keyframes fp-size-out {
+  0% { opacity: 1; }
+  40% { opacity: 0; }
+  86% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fp-size-in {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  86% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fp-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.18); }
+  50% { box-shadow: 0 0 0 7px rgba(74, 222, 128, 0.05); }
+}
+
+.fp-demo-bar {
+  animation: fp-bar 4.2s ease-in-out infinite;
+}
+
+.fp-demo-size-out {
+  animation: fp-size-out 4.2s ease-in-out infinite;
+}
+
+.fp-demo-size-in {
+  animation: fp-size-in 4.2s ease-in-out infinite;
+}
+
+.fp-pulse-dot {
+  animation: fp-pulse 2s infinite;
+}
+
+.fp-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.fp-faq summary::after {
+  content: "+";
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  font-weight: 700;
+  color: #2f6bff;
+  background: #eef3ff;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.fp-faq[open] summary::after {
+  content: "–";
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fp-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .fp-demo-bar,
+  .fp-demo-size-out,
+  .fp-demo-size-in,
+  .fp-pulse-dot {
+    animation: none;
+  }
+}
